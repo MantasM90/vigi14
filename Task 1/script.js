@@ -8,3 +8,15 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+const output = document.getElementById("output");
+document.getElementById("submit-btn").addEventListener("click", converter);
+
+function converter() {
+  const kg = document.getElementById("search").value;
+
+  kg === ""
+    ? (output.innerHTML = `<div>Užpildykite lauką</div>`)
+    : (output.innerHTML = `<div>Svarai: ${kg * 2.2046} lb.</div><div>Gramai: ${
+        kg * 0.001
+      } g.</div><div>Uncijos: ${kg * 35.274} oz.</div>`);
+}

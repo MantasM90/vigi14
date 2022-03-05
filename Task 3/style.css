@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -58,4 +58,22 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+}
+#message.hidden {
+  display: none;
+}
+#output {
+  display: flex;
+  flex-wrap: wrap;
+}
+#output > div {
+  padding: 10px;
+}
+#output > div > div {
+  text-align: center;
+  font-weight: bold;
+}
+
+#output img {
+  width: 100px;
 }
